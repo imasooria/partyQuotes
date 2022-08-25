@@ -8,7 +8,7 @@ console.log(partyQuotes)
 
 const app = express()
 app.use(cors());
-const port = 3000
+const port = process.env.PORT || 5000
 
 function getRandomIndex(min, max) {
     min = Math.ceil(min);
